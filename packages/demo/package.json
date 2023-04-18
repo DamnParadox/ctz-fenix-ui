@@ -1,0 +1,15 @@
+{
+  "name": "@ctz-fenix-ui/demo",
+  "version": "1.0.0",
+  "description": "示例组件",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ctz",
+  "license": "ISC",
+  "dependencies": {
+    "@ctz-fenix-ui/utils": "workspace:^"
+  }
+}

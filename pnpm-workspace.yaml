@@ -1,0 +1,7 @@
+packages:
+  - packages/*
+  - cli
+  - docs
+  - example
+  # 排除一些目录中的包
+  - '!**/test/**'

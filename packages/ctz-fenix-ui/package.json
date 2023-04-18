@@ -1,0 +1,21 @@
+{
+  "name": "@ctz-fenix-ui/ctz-fenix-ui",
+  "version": "1.0.0",
+  "description": "组件库入口",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:rimraf": "rimraf ../../lib && vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build"
+  },
+  "keywords": [],
+  "author": "ctz",
+  "license": "ISC",
+  "dependencies": {
+    "@ctz-fenix-ui/ctz-input": "workspace:^",
+    "@ctz-fenix-ui/demo": "workspace:^"
+  },
+  "devDependencies": {
+    "vite-plugin-dts": "^2.3.0"
+  }
+}
