@@ -155,8 +155,13 @@ importers:
         specifier: ^4.9.3
         version: 4.9.3
 
+  packages/checkout: {}
+
   packages/ctz-fenix-ui:
     dependencies:
+      '@ctz-fenix-ui/checkout':
+        specifier: workspace:^
+        version: link:../checkout
       '@ctz-fenix-ui/ctz-input':
         specifier: workspace:^
         version: link:../ctz-input
@@ -179,6 +184,8 @@ importers:
       '@ctz-fenix-ui/utils':
         specifier: workspace:^
         version: link:../utils
+
+  packages/select: {}
 
   packages/utils:
     dependencies:

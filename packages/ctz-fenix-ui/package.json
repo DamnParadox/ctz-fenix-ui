@@ -12,6 +12,7 @@
   "author": "ctz",
   "license": "ISC",
   "dependencies": {
+    "@ctz-fenix-ui/checkout": "workspace:^",
     "@ctz-fenix-ui/ctz-input": "workspace:^",
     "@ctz-fenix-ui/demo": "workspace:^"
   },
