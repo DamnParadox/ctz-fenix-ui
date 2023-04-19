@@ -14,7 +14,9 @@
   "dependencies": {
     "@ctz-fenix-ui/checkout": "workspace:^",
     "@ctz-fenix-ui/ctz-input": "workspace:^",
-    "@ctz-fenix-ui/demo": "workspace:^"
+    "@ctz-fenix-ui/demo": "workspace:^",
+    "@ctz-fenix-ui/radio": "workspace:^",
+    "@ctz-fenix-ui/switch": "workspace:^"
   },
   "devDependencies": {
     "vite-plugin-dts": "^2.3.0"

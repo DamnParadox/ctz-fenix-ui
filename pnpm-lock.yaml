@@ -155,7 +155,11 @@ importers:
         specifier: ^4.9.3
         version: 4.9.3
 
-  packages/checkout: {}
+  packages/checkout:
+    dependencies:
+      '@ctz-fenix-ui/utils':
+        specifier: workspace:^
+        version: link:../utils
 
   packages/ctz-fenix-ui:
     dependencies:
@@ -168,6 +172,9 @@ importers:
       '@ctz-fenix-ui/demo':
         specifier: workspace:^
         version: link:../demo
+      '@ctz-fenix-ui/radio':
+        specifier: workspace:^
+        version: link:../radio
     devDependencies:
       vite-plugin-dts:
         specifier: ^2.3.0
@@ -185,7 +192,19 @@ importers:
         specifier: workspace:^
         version: link:../utils
 
+  packages/radio:
+    dependencies:
+      '@ctz-fenix-ui/utils':
+        specifier: workspace:^
+        version: link:../utils
+
   packages/select: {}
+
+  packages/switch:
+    dependencies:
+      '@ctz-fenix-ui/utils':
+        specifier: workspace:^
+        version: link:../utils
 
   packages/utils:
     dependencies:

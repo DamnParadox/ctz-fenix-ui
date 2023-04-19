@@ -29,7 +29,7 @@ export const initDoc = (componentInfo: ComponentInfo) => {
   const menuPath = path.resolve(docRootPath, 'components.ts')
   const content = fs.readFileSync(menuPath).toString()
   const index = content.indexOf('] // end')
-  const result = content.substring(0, index - 1) +
+  const result = content.substring(0, index - 2) +
     `,\n  { text: '${upCamelName} ${zhName}', link: '/components/${lineName}' }\n` +
     content.substring(index)
   fs.writeFileSync(menuPath, result)
