@@ -62,6 +62,7 @@ const updatePackageJson = (componentInfo: ComponentInfo) => {
   if (fs.existsSync(packageJsonPath)) {
     let content = fs.readFileSync(packageJsonPath).toString()
     content = content.replace(lineName, nameWithLib)
+    content = content.replace('index.js', 'index.ts')
     fs.writeFileSync(packageJsonPath, content)
   }
 }
